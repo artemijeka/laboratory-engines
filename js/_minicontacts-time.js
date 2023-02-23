@@ -1,5 +1,5 @@
-export function minicontactsTime() {
-  let mct = document.querySelector(".minicontacts__time");
+export function initMinicontactsTime() {
+  let mct = document.querySelector(".js-minicontacts-time");
   let comHours = mct.dataset.hours;
   let comTimezone = mct.dataset.timezone;
   let comDays = mct.dataset.days;

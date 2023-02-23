@@ -1,0 +1,21 @@
+.menu {
+  height: px2vw(64);
+  justify-content: space-between;
+  display: flex;
+  &__item {
+    font-weight: 600;
+    font-size: px2vw(12);
+    line-height: px2vw(16);
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: $color;
+
+    transition: 300ms;
+    &:hover {
+    color: $color-red;
+
+    }
+  }
+}

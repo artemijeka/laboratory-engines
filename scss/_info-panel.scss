@@ -1,0 +1,20 @@
+.info-panel {
+  height: px2vw(153);
+  display: flex;
+  &__item {
+    max-width: 24em;
+    height: 100%;
+    padding-left: px2vw(95);
+    padding-right: px2vw(95);
+    padding-top: px2vw(39);
+    &:first-of-type {
+      padding-left: 0;
+    }
+    &:not(:last-of-type) {
+      border-right: px2vw(1) solid rgba(255, 255, 255, 0.25);
+    }
+    &.--long {
+      max-width: 33em;
+    }
+  }
+}

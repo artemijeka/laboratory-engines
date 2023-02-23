@@ -1,4 +1,5 @@
 .minicontent {
+  height: 100%;
   display: inline-flex;
   align-items: center;
   font-weight: 400;
@@ -12,6 +13,7 @@
     flex-direction: column;
     text-align: left;
     line-height: 164%;
+    pointer-events: none;
 
     &.--bold {
       font-weight: 700;

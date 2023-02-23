@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Manrope";
   font-weight: normal;
-  font-style: normal;
+  font-style: 400;
   src: local("Manrope"),
     url("../fonts/manrope/Manrope-Regular.woff2") format("woff2"),
     url("../fonts/manrope/Manrope-Regular.otf") format("opentype"),
@@ -20,11 +20,29 @@
 }
 @font-face {
   font-family: "Manrope";
+  font-weight: 600;
+  font-style: normal;
+  src: local("Manrope"),
+    url("../fonts/manrope/Manrope-SemiBold.woff2") format("woff2"),
+    url("../fonts/manrope/Manrope-SemiBold.otf") format("opentype"),
+    url("../fonts/manrope/Manrope-SemiBold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
   font-weight: 800;
   font-style: normal;
   src: local("Manrope"),
     url("../fonts/manrope/Manrope-ExtraBold.woff2") format("woff2"),
     url("../fonts/manrope/Manrope-ExtraBold.otf") format("opentype"),
     url("../fonts/manrope/Manrope-ExtraBold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Porsche Next Arabic TT";
+  font-weight: normal;
+  font-style: normal;
+  src: local("Porsche Next Arabic TT"),
+    url("../fonts/PorscheNextArabicTT-Regular.ttf") format("truetype");
   font-display: swap;
 }

@@ -19,13 +19,23 @@
 @import 'minicontent';
 @import 'messengers';
 @import 'minicontacts';
+@import 'map-mini';
+@import 'dark-veil';
+@import 'btn';
+@import 'info-text';
 
 
 
 // Организмы
 @import 'header';
+@import 'menu';
+@import 'banner';
+@import 'scroll-attention';
+@import 'info-panel';
+@import 'popup-form';
 
 
 
 // Модификаторы
+@import 'modificators/common';
 @import 'modificators/dotted-underline';

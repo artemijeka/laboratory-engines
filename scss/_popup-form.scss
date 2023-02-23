@@ -1,0 +1,10 @@
+.popup-form {
+  width: px2vw(500);
+  height: px2vw(600);
+  opacity: 0;
+  pointer-events: none;
+  &.--active {
+    opacity: 1;
+    z-index: 100;
+  }
+}

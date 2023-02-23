@@ -1,0 +1,58 @@
+.scroll-attention {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: px2vw(calc($w-m / 2));
+  background-color: white;
+  padding-top: px2vw(169);
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  &__title {
+    font-family: "Porsche Next Arabic TT";
+    font-style: normal;
+    font-size: px2vw(16);
+    font-weight: 700;
+    line-height: 156%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #efefef;
+    transform: rotate(-90deg);
+    height: px2vw(100);
+    width: px2vw(100);
+
+    margin-bottom: px2vw(38);
+  }
+  &__line {
+    width: px2vw(1.5);
+    height: px2vw(488);
+    background-color: #efefef;
+  }
+  &__ico {
+    width: px2vw(18.4);
+    height: px2vw(32);
+    margin-top: px2vw(38);
+  }
+}
+
+#mouse-circle {
+  animation-name: down-up;
+  animation-duration: 1250ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes down-up {
+  0%{
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(45%);
+
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

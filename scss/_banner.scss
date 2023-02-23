@@ -1,0 +1,38 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: px2vw(911);
+  background-size: cover;
+  padding-top: px2vw(128);
+  padding-left: px2vw(calc(115 + 140));
+  &__title {
+    max-width: 15em;
+    font-weight: 400;
+    font-size: px2vw(65);
+    line-height: 146%;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+  }
+  &__subtitle {
+    margin-top: px2vw(45);
+    font-weight: 400;
+    font-size: px2vw(27);
+    line-height: 167%;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+  }
+  &__btns {
+    display: flex;
+
+    margin-top: px2vw(45);
+  }
+  &__btn {
+    &:not(:last-of-type) {
+      margin-right: px2vw(22);
+    }
+  }
+  &__info-panel {
+    margin-top: auto;
+  }
+}

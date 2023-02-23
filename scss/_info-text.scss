@@ -1,0 +1,28 @@
+.info-text {
+  display: inline-block;
+  // display: inline-flex;
+  // flex-direction: column;
+  // justify-content: center;
+  font-weight: 400;
+  font-size: px2vw(17);
+  line-height: 159%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  position: relative;
+  strong {
+    font-weight: 800;
+  }
+  &:before {
+    content: "";
+    height: px2vw(9.6);
+    width: px2vw(13.2);
+
+    background-image: url("../images/v.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: absolute;
+    top: 0;
+  }
+}

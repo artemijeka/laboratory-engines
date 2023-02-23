@@ -1,0 +1,21 @@
+.--dotted-underline {
+  line-height: 173%;
+  overflow: hidden;
+  &:hover {
+    span {
+      &::after {
+        transform: translateX(-33%);
+      }
+    }
+  }
+  span {
+    width: fit-content;
+    &::after {
+      content: "";
+      display: flex;
+      border-bottom: px2vw(2) dotted $color-red;
+
+      transition: 300ms;
+    }
+  }
+}

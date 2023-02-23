@@ -1,0 +1,45 @@
+.minicontent {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 400;
+  line-height: 182%;
+  font-size: px2vw(11);
+  letter-spacing: 0.02em;
+
+  color: $color;
+  &__text {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 164%;
+
+    &.--bold {
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+    &.--extrabold {
+      font-weight: 800;
+      letter-spacing: 0.05em;
+    }
+  }
+  &__messengers {
+    margin-left: px2vw(24);
+  }
+  &__ico {
+    width: px2vw(35);
+    height: px2vw(35);
+    margin-right: px2vw(10);
+    &.--map {
+      display: inline-block;
+      background-image: url("../images/map.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &.--point {
+      width: px2vw(12);
+      height: px2vw(15);
+      fill: $color-red;
+    }
+  }
+}

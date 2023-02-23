@@ -1,0 +1,73 @@
+/********************************* art-reset *********************************/
+/**
+ * v1.5 - 14.02.2023
+ * License: none (public domain)
+ **/
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  overflow-y: hidden;
+}
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+button::-moz-focus-inner,
+a:focus,
+a {
+  border: 0;
+  outline: none;
+}
+
+/* input placeholder not transparent */
+input::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+input::-moz-placeholder {
+  opacity: 1;
+} /* Firefox 19+ */
+
+input:-moz-placeholder {
+  opacity: 1;
+} /* Firefox 18- */
+
+input:-ms-input-placeholder {
+  opacity: 1;
+}
+
+/* delete arrows on input type=number */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input {
+  border: none;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+mark {
+  background-color: transparent;
+}

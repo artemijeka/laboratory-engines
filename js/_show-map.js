@@ -1,7 +1,8 @@
+import { darkVeil } from "./_dark-veil";
+
 export function initShowMap() {
   let btnShowMap = document.querySelector(".js-show-map");
   let mapMini = document.querySelector(".js-map-mini");
-  let darkVeil = document.querySelector(".js-dark-veil");
 
   btnShowMap.addEventListener("mouseenter", () => {
     mapMini.classList.add("--active");

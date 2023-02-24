@@ -80,6 +80,11 @@
         fill="#20C863" />
     </symbol>
 
+    <symbol viewBox="0 0 20 20" id="x2">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M10 12.253 2.48 20 0 17.444l7.519-7.747-6.93-7.14L3.07 0 10 7.14 16.93 0l2.48 2.556-6.93 7.14L20 17.445 17.519 20l-7.52-7.747Z" />
+    </symbol>
+
     <!-- 
       <svg>
         <use xlink:href="#calc"></use>
@@ -237,7 +242,8 @@
         </h3>
 
         <h3 class="info-panel__item --long info-text">
-          <strong>Лучшие цены на рынке</strong> благодаря прямым поставкам запчастей и собственному цеху механической обработки
+          <strong>Лучшие цены на рынке</strong> благодаря прямым поставкам запчастей и собственному цеху механической
+          обработки
         </h3>
       </div>
 
@@ -254,8 +260,31 @@
   </div>
 
 
-  <div class="popup-form --active">
+  <div class="popup-form js-popup-form">
+    <svg class="popup-form__close js-popup-form-close">
+      <use xlink:href="#x2"></use>
+    </svg>
+    <div class="popup-form__title">Быстро оставить заявку</div>
+    <div class="popup-form__subtitle">Введите номер — позвоним вам в течение 5-10 минут в рабочее время</div>
+    <form>
+      <label class="popup-form__label" for="popup-form-phone">Введите ваш номер телефона</label>
+      <input required class="popup-form__input btn --white js-popup-form-phone" type="tel" name="phone" id="popup-form-phone"
+        placeholder="+ 7 (_ _ _) _ _ _ - _ _ - _ _">
 
+        <!--  --disabled -->
+      <button type="submit" class="popup-form__submit btn --red js-popup-form-submit"><span class="btn__text">Перезвоните мне</span></button>
+
+      <label class="popup-form__checkbox checkbox">
+        <div class="checkbox__box">
+          <input required type="checkbox" class="checkbox__self js-popup-form-checkbox">
+          <span class="checkbox__decor"></span>
+        </div>
+        <span class="checkbox__text">
+          Нажимая кнопку вы соглашаетесь с условиями <a class="checkbox__link" href="#asd">Политики
+            конфиденциальности</a>
+        </span>
+      </label>
+    </form>
   </div>
 
 

@@ -7,11 +7,9 @@
   top: 0;
   opacity: 0;
   pointer-events: none;
-  &.--active {
-    opacity: 0.76;
-    background: #333;
-    pointer-events: all;
-  }
+
+  transition: opacity 500ms;
+
   &__close {
     position: fixed;
     top: 0.5vw;
@@ -20,5 +18,15 @@
     height: px2vw(65);
     fill: white;
     cursor: pointer;
+  }
+  &.--active {
+    opacity: 0.76;
+    background: #333;
+    pointer-events: all;
+  }
+  &.--no-x & {
+    &__close {
+      display: none;
+    }
   }
 }
